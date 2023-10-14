@@ -7,15 +7,19 @@
     font-family: "Poppins", sans-serif;
 }
 
-html,body{
-   display: grid;
-   height: 100%;
-   place-items: center;
+body{
    background: #1abc9c;
+   overflow: hidden;
+}
+
+.container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
 }
 
 .wrapper{
-    width: 380px;
+    width: 100%;
     background: #fff;
     border-radius: 5px;
 }
@@ -48,6 +52,12 @@ html,body{
     border-radius: 5px;
     border: 1px solid lightgrey;
     font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form .row input:focus{
+    border-color: #16a085;
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25)
 }
 
 .wrapper form .row i{
@@ -96,11 +106,11 @@ html,body{
 .wrapper form .signup-link{
     text-align: center;
     margin-top: 20px;
+    font-size: 17px;
 }
 
 .wrapper form .signup-link a{
     color: #16a085;
-    font-size: 18px;
     text-decoration: none;
 }
 
