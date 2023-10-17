@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="verticaltab.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Vertical Tab</title>
 </head>
 <body>
     <div class="container">
         <div class="main-title">CSS Vertical Tabs</div>
         <div class="content">
-            <input type="radio" name="indicator" checked ="home">
+            <input type="radio" name="indicator" checked id="home">
             <input type="radio" name="indicator" id="blog">
             <input type="radio" name="indicator" id="help">
             <input type="radio" name="indicator" id="code">
@@ -45,12 +45,32 @@
                 <div class="indicator"></div>
             </div>
             <div class="text-content">
-                <div class="title">Home Content</div>
-                <p>Its good To be Home!</p>
+                <div class="home text">
+                    <div class="title">Home Content</div>
+                    <p>Its good To be Home!</p>
+                </div>
+
+                <div class="blog text">
+                    <div class="title">Blog Content</div>
+                    <p>Its good To be Home!</p>
+                </div>
+
+                <div class="help text">
+                    <div class="title">Help Content</div>
+                    <p>Its good To be Home!</p>
+                </div>
+
+                <div class="code text">
+                    <div class="title">Code Content</div>
+                    <p>Its good To be Home!</p>
+                </div>
+
+                <div class="about text">
+                    <div class="title">About Content</div>
+                    <p>Its good To be Home!</p>
+                </div>
             </div>
         </div>
     </div>
-    
-
 </body>
 </html>
