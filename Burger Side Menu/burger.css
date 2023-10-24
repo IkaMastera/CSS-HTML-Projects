@@ -13,12 +13,48 @@
     position: relative;
 }
 
+input[type="checkbox"]{
+    display: none;
+}
+
+.wrapper .menu-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 45px;
+    width: 45px;
+    z-index: 999;
+    color: #f2f2f2;
+    background: #4a4a4a;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+#btn:checked ~ .menu-btn{
+    left: 247px;
+}
+
+#btn:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+
 .wrapper #sidebar{
     position: fixed;
     height: 100%;
     width: 270px;
     background: linear-gradient(135deg, #ff9a9e 1%, #000080 100%);
     overflow: hidden;
+    left: -270px;
+    transition: all 0.3s ease;
+}
+
+#btn:checked ~ #sidebar {
+    left: 0;
 }
 
 #sidebar .title{
