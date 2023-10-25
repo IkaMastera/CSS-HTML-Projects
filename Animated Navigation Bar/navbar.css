@@ -20,8 +20,10 @@ nav{
     width: 600px;
     height: 60px;
     border-radius: 5px;
+    background: #fff;
     display: flex;
     align-items: center;
+    position: relative;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -32,4 +34,26 @@ nav label{
     font-size: 18px;
     font-weight: 400;
     border-radius: 5px;
+    margin: 0 5px;
+    color: #8e44ad;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav label:hover{
+    background: rgba(142,  68, 173, 0.3);
+}
+
+nav label i{
+    margin-right: 4px;
+}
+
+.slider{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #8e44ad;
+    left:0;
+    top: 0;
 }
