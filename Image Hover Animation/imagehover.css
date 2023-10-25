@@ -18,7 +18,7 @@ body{
 
 .container{
     height: 400px;
-    width: 400px;
+    min-width: 400px;
     display: flex;
     align-items: flex-end;
 }
@@ -29,6 +29,7 @@ body{
     width: 70px;
     background: #fff;
     border-radius: 50%;
+    margin: 0 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -53,6 +54,18 @@ body{
     transform: translateX(-50%);
     border-radius: 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    transition: transform 0.5s, z-index 0s, left 0.5s;
+    transition-delay: 0s, 0.5s, 0.5s;
+    pointer-events: none;
+}
+
+.icon-image:hover .hover-image{
+    left: -200px;
+    z-index: 12;
+    transform: translateX(80px);
+    transition: left 0.5s, z-index 0s, transform 0.5s;
+    transition-delay: 0s , 0.5s, 0.5s;
 }
 
 .hover-image img{
@@ -96,9 +109,10 @@ body{
 }
 
 .icon-image:hover .details{
-    transition: all 0.5s ease;
     opacity: 1;
     transform: translateY(4px);
+    transition: all 0.3s ease;
+    transition-delay: 0.9s;
 }
 
 .content .details::before{
@@ -123,4 +137,16 @@ body{
     font-size: 17px;
     color: #0396FF;
     margin: -3px 0 5px 0;
+}
+
+.last .hover-image{
+   transition: none;
+}
+
+.last:hover .hover-image {
+    transition: none;
+}
+
+.last:hover .details {
+    transition-delay: 0s;
 }
