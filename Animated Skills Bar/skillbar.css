@@ -56,6 +56,26 @@ body{
     opacity: 0;
 }
 
+.skill-per.css{
+    width: 95%;
+    animation-delay: 0.1s;
+}
+
+.skill-per.javascript {
+    width: 98%;
+    animation-delay: 0.2s;
+}
+
+.skill-per.typescript {
+    width: 65%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.nextjs {
+    width: 85%;
+    animation-delay: 0.4s;
+}
+
 @keyframes progress{
     0%{
         width: 0;
