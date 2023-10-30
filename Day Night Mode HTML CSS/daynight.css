@@ -25,6 +25,26 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
+.content .toggle{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: #092c3e;
+    display: flex;
+    align-items: center;
+}
+
+.toggle .circle{
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
 .content .image-box{
     height: 232px;
     width: 200px;
