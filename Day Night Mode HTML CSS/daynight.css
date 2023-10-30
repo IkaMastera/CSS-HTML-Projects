@@ -20,7 +20,8 @@
     max-width: 570px;
     background: #fff;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 12px;
+    position: relative;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -66,7 +67,7 @@
     border: none;
     color: #fff;
     font-size: 17px;
-    padding-left: 6px 14px;
+    padding: 6px 14px;
     margin-top: 16px;
     background: #092c3e;
     border-radius: 6px;
@@ -76,4 +77,23 @@
 
 .details button:hover{
     transform: scale(0.97);
+}
+
+.content .details .media-icons{
+    position: absolute;
+    bottom: 16px;
+    right: 15px;
+}
+
+.details .media-icons a{
+    display: inline-flex;
+    margin: 0 4px;
+    color: #092c3e;
+    opacity: 0.7;
+    text-decoration: none;
+    font-size: 16px; 
+}
+
+.details .media-icons a:hover{
+    opacity: 1;
 }
