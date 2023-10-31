@@ -67,12 +67,29 @@ nav .menu{
     color: #3498db;
 }
 
+nav label.button{
+    color: #31344b;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+nav label.cancel{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+#check{
+    display: none;
+}
+
 @media (max-width: 940px){
     .menu ul{
         display:block;
         position: fixed;
         top: 0;
-        left: 0;
+        left: 100%;
         width: 100%;
         max-width: 400px;
         padding-top: 45px;
@@ -81,6 +98,7 @@ nav .menu{
         background: #ecf0f3;
         box-shadow: 0 5px 10px #b0b0b5;
         z-index: 12;
+        transition: all 0.3s ease;
     }
 
     .menu ul a{
@@ -94,6 +112,22 @@ nav .menu{
 
     .menu ul a:hover::before{
         box-shadow: none;
+    }
+
+    nav label.bars {
+        display: block;
+    }
+
+    #check:checked ~ label.bars{
+        display: none;
+    }
+
+    #check:checked ~ ul label.cancel{
+        display: block;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
     }
 }
 
