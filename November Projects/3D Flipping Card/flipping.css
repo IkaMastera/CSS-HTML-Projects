@@ -19,6 +19,11 @@ body{
     position: relative;
     height: 330px;
     width: 620px;
+    perspective: 1000px;
+}
+
+.wrapper:hover .flip-card{
+   transform: rotateY(180deg);
 }
 
 .wrapper .flip-card{
@@ -26,6 +31,8 @@ body{
     height: 100%;
     width: 100%;
     background: #D48600;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
 }
 
 .flip-card .card{
@@ -38,6 +45,11 @@ body{
     border-top: 2px solid #cc6600;
     border-top: 2px solid #cc6600;
     box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+}
+
+.flip-card .card .front.card{
+    transform: rotateY(180deg);
 }
 
 .card span.triangle{
@@ -59,6 +71,7 @@ body{
     border-right: 40px solid transparent;
     border-left: 40px solid transparent;
     border-bottom: 80px solid #D48600;
+    margin-right: 16px;
 }
 
 .card span.circle,
@@ -66,4 +79,8 @@ body{
     height: 110px;
     width: 110px;
     border: 10px solid #4d2600;
+}
+
+.card span.circle{
+    border-radius: 50%;
 }
