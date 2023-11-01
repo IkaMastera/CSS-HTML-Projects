@@ -46,6 +46,7 @@ body{
     border-top: 2px solid #cc6600;
     box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
     backface-visibility: hidden;
+    position: absolute;
 }
 
 .flip-card .card .front.card{
