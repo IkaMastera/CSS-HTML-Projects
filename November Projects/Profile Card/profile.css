@@ -6,3 +6,23 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    background: #3498db;
+}
+
+.main-box{
+    height: 550px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.main-box .content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: grey;
+}
