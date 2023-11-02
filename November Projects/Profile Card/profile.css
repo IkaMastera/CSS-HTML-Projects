@@ -104,3 +104,14 @@ body{
 .content .box .share{
     opacity: 1;
 }
+
+.image-box .about{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.35);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+}
