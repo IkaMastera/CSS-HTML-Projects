@@ -18,6 +18,7 @@ body{
     left: 50%;
     top: 52%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .main-box .content{
@@ -44,4 +45,35 @@ body{
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.content .box{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.content .box .share , .cancel{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2980b9;
+    background: #fff;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.content .box .share{
+    opacity: 1;
 }
