@@ -25,7 +25,6 @@ body{
     position: relative;
     height: 100%;
     width: 100%;
-    background: grey;
 }
 
 .content .image-box{
@@ -38,6 +37,22 @@ body{
     left: 0;
     bottom: 130px;
     transition: all 0.4s ease;
+}
+
+#check:checked ~ .image-box{
+    bottom: 80px;
+}
+
+.content .image-box::before{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
 }
 
 .content .image-box img{
@@ -72,6 +87,18 @@ body{
     border-radius: 25px;
     opacity: 0;
     transition: all 0.3s ease;
+}
+
+#check:checked ~ .content .box .share{
+    opacity: 0;
+}
+
+#check:checked ~ .box .cancel{
+    opacity: 1;
+}
+
+#check{
+    display: none;
 }
 
 .content .box .share{
