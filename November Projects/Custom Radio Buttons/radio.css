@@ -43,11 +43,19 @@ body{
     width: 20px;
     background: #d9d9d9;
     border-radius: 50%;
+    position: relative;
 }
 
 .wrapper .option .dot::before{
-    content: "";
     position: absolute;
+    content: "";
+    left: 4px;
+    top: 4px;
+    height: 12px;
+    width: 12px;
+    background: #0069d9;
+    border-radius: 50%;
+    opacity: 0;
 }
 
 .wrapper .option span{
