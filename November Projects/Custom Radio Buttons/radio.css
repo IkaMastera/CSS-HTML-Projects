@@ -7,7 +7,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+html,body{
     display: grid;
     place-items: center;
     height: 100%;
@@ -22,20 +22,20 @@ body{
    padding: 20px 15px;
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-evenly;
 }
 
 .wrapper .option{
     background: #fff;
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 0 10px;
     border-radius: 5px;
     cursor: pointer;
     border: 2px solid lightgrey;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     transition: all 0.3s ease;
 }
 
