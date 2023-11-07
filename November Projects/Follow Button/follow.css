@@ -9,7 +9,7 @@
 
 body{
     height: 100vh;
-    background: #fff;
+    background: #f2f2f2;
     overflow: hidden;
 }
 
@@ -17,6 +17,7 @@ body{
     position: absolute;
     right: 30px;
     bottom: 30px;
+    width: 400px;
 }
 
 .container .box{
@@ -73,7 +74,7 @@ body{
     top: 10px;
     color: #666;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
 
 .container i:hover {
