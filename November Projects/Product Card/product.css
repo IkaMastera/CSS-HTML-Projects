@@ -23,6 +23,19 @@ body{
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     justify-content: space-between;
+    position: relative;
+}
+
+.container::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 12px 12px 0;
+    clip-path: circle(65% at right 35%);
+    background: linear-gradient(135deg, #fd9bb0 10%, #F6416C 100%);
 }
 
 .container .box.one{
@@ -114,6 +127,12 @@ body{
     color: #fff;
 }
 
+.box.two .info .shipping{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
 .container .box.two .image{
     height: 340px;
     width: 430px;
@@ -123,4 +142,20 @@ body{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.box.two .info .button2{
+    margin: 17px 0;
+}
+
+.box.two .info .button2 button{
+    outline: none;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 6px;
+    border: 1px solid #fff;
 }
