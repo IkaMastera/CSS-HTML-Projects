@@ -6,3 +6,121 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: #e6e6e6;
+}
+
+.container{
+    display: flex;
+    max-width: 720px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+}
+
+.container .box.one{
+    padding: 35px 5px 0 35px;
+}
+
+.box.one .details .topic{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.box.one .details p{
+    color: #737373;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.box.one .details .rating{
+    color: #fd9bb0;
+}
+
+.box.one .details .price-box{
+    margin-top: 16px;
+}
+
+.details .price-box .discount{
+    font-size: 20px;
+    color: #737373;
+    margin: 10px 0 0 12px;
+    position: relative;
+}
+
+.price-box .discount::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #737373;
+    top: 50%;
+    left: -8px;
+}
+
+.details .price-box .price{
+    color: #fc6989;
+    font-size: 30px;
+}
+
+.box.one .button1{
+    margin-top: 55px;
+}
+
+.box.one .button1 button{
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding: 8px 16px;
+    background-color: #00e6e6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.box.one .button1 button:hover{
+    transform: scale(0.98);
+}
+
+.container .box.two .image-box{
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 32px;
+}
+
+.box.two .info{
+    margin: 0 35px 0 0;
+}
+
+.box.two .info .brand{
+    font-size: 17px;
+    font-weight: 600;
+    color: #c9032e;
+}
+
+.box.two .info .name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container .box.two .image{
+    height: 340px;
+    width: 430px;
+}
+
+.box.two .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
