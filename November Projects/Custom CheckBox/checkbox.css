@@ -22,6 +22,7 @@ html,body{
     align-items: center;
     padding: 20px;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .checkbox input{
@@ -32,6 +33,7 @@ html,body{
     background: #e6e6e6;
     -webkit-appearance: none;
     border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -54,4 +56,17 @@ input:checked{
 
 input:checked:before{
     left: 50px;
+}
+
+.checkbox .text:before{
+    content: "Disabled";
+    font-size: 25px;
+    font-weight: 500;
+    color: #bfbfbf;
+}
+
+input:checked ~ .text:before{
+    content: "Enabled";
+    font-size: 26px;
+    color: #664AFF;
 }
