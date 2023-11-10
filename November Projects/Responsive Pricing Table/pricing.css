@@ -6,3 +6,25 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #647df9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1090;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card{
+    width: calc(33% - 20pc);
+    background: #fff;
+    text-align: center;
+}
