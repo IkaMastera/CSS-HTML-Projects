@@ -39,4 +39,35 @@ html, body{
 .right .stars{
     font-size: 18px;
     color: #e84393;
+    margin-top: 8px;
+}
+
+.right .about p{
+    color: #8d8d8d;
+    font-size: 17px;
+}
+
+.right button{
+    background: #e84393;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.right h1{
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 12px;
+}
+
+button:hover{
+    transform: scale(0.98);
 }
