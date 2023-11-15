@@ -44,6 +44,12 @@ body{
     transition: all 0.25s ease;
 }
 
+#one:checked ~ label.first,
+#two:checked ~ label.second,
+#three:checked ~ label.third{
+    border-color: #8E49E8;
+}
+
 .card label.box:hover{
     background: #D5BBF7;
 }
@@ -61,5 +67,17 @@ body{
     margin-right: 15px;
     border: 5px solid transparent;
     display: inline-block;
+    transition: all 0.25s ease;
     box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#one:checked ~ label.first .circle,
+#two:checked ~ label.second .circle,
+#three:checked ~ label.third .circle{
+    border-color: #8E49E8;
+    background: #fff;
+}
+
+.card input[type="radio"]{
+    display: none;
 }
