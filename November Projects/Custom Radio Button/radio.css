@@ -6,3 +6,39 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+}
+
+.card{
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card .title{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card .content{
+    margin-top: 20px;
+}
+
+.card label.box{
+    background: #ddd;
+    display: flex;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
