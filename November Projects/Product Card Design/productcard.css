@@ -28,6 +28,7 @@ html, body{
     width: 50%;
     text-align: center;
     border-radius: 5px 0 0 5px;
+    z-index: 12;
 }
 
 .wrapper .right .logo{
@@ -70,4 +71,37 @@ html, body{
 
 button:hover{
     transform: scale(0.98);
+}
+
+.left{
+    background: url('iphone.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.left ul{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px 26px;
+    margin-left: -300px;
+    transition: 0.4s;
+}
+
+ul li{
+    font-size: 15px;
+    color: #fff;
+}
+
+.left:hover ul{
+    margin-left: 0px;
 }
