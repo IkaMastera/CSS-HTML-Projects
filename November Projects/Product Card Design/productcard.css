@@ -6,3 +6,37 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+html, body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: #fd79a8;
+}
+
+.wrapper{
+    display: flex;
+    height: 300px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .right{
+    background: #fff;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+}
+
+.wrapper .right .logo{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.right .stars{
+    font-size: 18px;
+    color: #e84393;
+}
