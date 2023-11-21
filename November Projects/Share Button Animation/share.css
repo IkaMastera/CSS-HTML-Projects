@@ -6,3 +6,10 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+html,body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: #34495e;
+}
