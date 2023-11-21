@@ -44,3 +44,16 @@ html,body{
 .main_div:hover:before{
     left: -250px;
 }
+
+.main_div .social_media{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
