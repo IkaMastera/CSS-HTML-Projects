@@ -19,3 +19,9 @@ body{
     border-right-color: #4070f4;
     animation: spin 1s infinite;
 }
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
