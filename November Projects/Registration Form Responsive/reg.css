@@ -59,6 +59,10 @@ body{
     padding: 0 15px;
 }
 
+.input-box input:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1)
+}
+
 .form .column{
     display: flex;
     column-gap: 15px;
