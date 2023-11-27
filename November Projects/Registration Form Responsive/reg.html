@@ -23,12 +23,12 @@
             <div class="column">
                 <div class="input-box">
                     <label>Phone Number</label>
-                    <input type="text" placeholder="Enter phone number" required/>
+                    <input type="number" placeholder="Enter phone number" required/>
                 </div>
 
                 <div class="input-box">
                     <label>Birth Date</label>
-                    <input type="text" placeholder="Enter birth date" required/>
+                    <input type="date" placeholder="Enter birth date" required/>
                 </div>
             </div>
 
@@ -53,21 +53,24 @@
                 <input type="text" placeholder="Enter street address line 2" required />
                 <div class="column">
                     <div class="select-box">
-                        <select name="" id="">
+                        <select>
                             <option hidden>Country</option>
-                            <option value="">America</option>
-                            <option value="">Japan</option>
-                            <option value="">India</option>
-                            <option value="">Nepal</option>
+                            <option>America</option>
+                            <option>Japan</option>
+                            <option>India</option>
+                            <option>Nepal</option>
                         </select>
                     </div>
+                    <input type="text" placeholder="Enter your city" required />
                 </div>
-                <input type="text" placeholder="Enter your city" required />
-                <input type="text" placeholder="Enter your region" required />
-                <input type="text" placeholder="Enter postal code" required />
+
+                <div class="column">
+                    <input type="text" placeholder="Enter your region" required />
+                    <input type="number" placeholder="Enter postal code" required />
+                </div>
             </div>
 
-
+            <button>Submit</button>
         </form>
     </section>
 </body>
