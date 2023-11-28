@@ -63,3 +63,35 @@ html, body{
     border-right-width: 0px;
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
 }
+
+.pagination li a:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-top-color: rgba(0, 0, 0, 0.35);
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.pagination li a:focus,
+.pagination li a:active{
+    padding-top: 4px;
+    border-left-width: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.pagination li:last-child a{
+    border-right-width: 1px;
+}
+
+.pagination li.icon a{
+    width: 120px;
+}
+
+.pagination li:first-child a span {
+    padding-right: 8px;
+
+}
+
+.pagination li:last-child a span{
+    padding-left: 8px;
+
+}
