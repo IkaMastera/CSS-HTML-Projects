@@ -15,6 +15,24 @@ body{
     background: #e3f2fd;
 }
 
+::-webkit-scrollbar{
+    height: 8px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 25px;;
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #6e93f7;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #4070f4;
+}
+
 .container{
     display: flex;
     max-width: 400px;
