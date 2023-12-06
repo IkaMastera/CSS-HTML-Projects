@@ -8,7 +8,24 @@
 </head>
 <body>
     <div class="container active">
-        <span class="overlay"></span>
+        <span class="overlay" id="percent">0%</span>
     </div>
+
+    <script>
+        const container = document.querySelector(".container"),
+              percent = document.querySelector("#percent");
+
+        let perVal = 0;
+
+        let increament = setInterval(() => {
+            perVal++;
+            percent.textContent = `${perVal}%`;
+            
+            if(perVal == 100){
+                clearInterval(increament);
+                container.classList.remove("active");
+            }
+        }, 120)
+    </script>
 </body>
 </html>
