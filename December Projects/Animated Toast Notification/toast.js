@@ -10,12 +10,16 @@ const button = document.querySelector("button"),
         setTimeout(() => {
           toast.classList.remove("active");
         }, 5000);
+
+        setTimeout(() => {
+          progress.classList.remove("active");
+        }, 5300);
       });
 
       closeIcon.addEventListener("click", () => {
         toast.classList.remove("active");
 
         setTimeout(() => {
-           progress.classList.remove("active")
-        }, 5300);
+           toast.classList.remove("active")
+        }, 300);
       });
