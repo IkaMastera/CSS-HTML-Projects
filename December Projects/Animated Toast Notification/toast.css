@@ -24,6 +24,7 @@ body{
     background: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-left: 6px solid #4070f4;
+    overflow: hidden;
 }
 
 .toast .toast-content{
@@ -71,6 +72,25 @@ body{
 
 .toast .close:hover{
     opacity: 1;
+}
+
+.toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #333;
+}
+
+.toast .progress::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
 }
 
 button{
