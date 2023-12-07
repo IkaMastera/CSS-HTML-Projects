@@ -13,6 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #f2f2f2;
+    overflow: hidden;
 }
 
 .toast{
@@ -25,6 +26,12 @@ body{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-left: 6px solid #4070f4;
     overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active{
+    transform: translateX(0%);
 }
 
 .toast .toast-content{
@@ -52,7 +59,7 @@ body{
 
 .message .text{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     color: #666666;
 }
 
@@ -78,19 +85,29 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 3px;
+    height: 5px;
     width: 100%;
-    background: #333;
+    background: #ddd;
 }
 
-.toast .progress::before{
+.toast .progress:before{
     content: '';
     position: absolute;
     bottom: 0;
-    right: 50px;
+    right: 0;
     height: 100%;
     width: 100%;
     background-color: #4070f4;
+}
+
+.progress.active:before{
+   animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
 }
 
 button{
