@@ -7,3 +7,7 @@ const button = document.querySelector("button"),
         toast.classList.add("active");
         progress.classList.add("active");
       });
+
+      closeIcon.addEventListener("click", () => {
+        toast.classList.remove("active");
+      });
