@@ -51,12 +51,12 @@ label span:hover{
 
 .text:hover label::before{
     color: rgba(255, 0, 188, 0.8);
-    animation: glitch .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: glitch .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
 
 .text:hover label::after{
-    color: rgba(255, 0, 188, 0.8);
-    animation: glitch .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+    color: rgba(0, 255, 255, 0.8);
+    animation: glitch .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
 }
 
 @keyframes glitch {
