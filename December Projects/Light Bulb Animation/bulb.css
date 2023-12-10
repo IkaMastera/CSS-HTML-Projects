@@ -6,3 +6,50 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.wrapper{
+    position: relative;
+    height: 500px;
+    width: 450px;
+}
+
+.wrapper img{
+    height: 450px;
+    width: 100%;
+    margin-top: -50px;
+}
+
+.wrapper label{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper label span{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    border: 2px solid #fff;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrapper label span:hover{
+    background: #fff;
+    color: #111;
+}
