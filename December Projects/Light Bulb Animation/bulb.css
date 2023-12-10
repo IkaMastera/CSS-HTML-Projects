@@ -22,6 +22,7 @@ body{
 }
 
 .wrapper img{
+    position: absolute;
     height: 450px;
     width: 100%;
     margin-top: -50px;
@@ -49,7 +50,55 @@ body{
     transition: all 0.3s ease;
 }
 
+.wrapper label span::before{
+    content: "Turn off";
+}
+
 .wrapper label span:hover{
     background: #fff;
     color: #111;
+}
+
+.wrapper img#bulb-on{
+    opacity: 0;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+    0%{
+        opacity: 1;
+    }
+    5%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    84%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#btn:checked ~ label span::before{
+    content: "Turn on";
+}
+
+#btn:checked ~ img#bulb-on{
+    animation: none;
+}
+
+.wrapper input{
+    display: none;
 }
