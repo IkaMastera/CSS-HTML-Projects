@@ -30,6 +30,8 @@ ul li{
     border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
 }
 
 ul li .fab{
@@ -38,6 +40,7 @@ ul li .fab{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.5s;
 }
 
 ul li:nth-child(1){
@@ -71,3 +74,36 @@ ul li:nth-child(4){
 ul li:nth-child(4) .fab{
     border-color: #eb1c14;
 }
+
+ul li:hover:nth-child(1){
+    background: #38A1F3;
+}
+
+ul li:hover:nth-child(2){
+    background: #d72888;
+}
+
+ul li:hover:nth-child(3){
+    background: #0077B5;
+}
+
+ul li:hover:nth-child(4){
+    background: #eb1c14;
+}
+
+ul li .fab:nth-child(1){
+    left: -50%;
+    opacity: 0;
+}
+
+ul li:hover .fab:nth-child(1){
+    left: 50%;
+    opacity: 1;
+    color: white;
+}
+
+ul li:hover .fab:nth-child(2){
+    left: 150%;
+    opacity: 0;
+}
+
