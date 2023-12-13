@@ -60,6 +60,12 @@ body{
     left: 12px;
     top: -40px;
     z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.product-card .main-images img.active{
+    opacity: 1;
 }
 
 .product-card .shoe-details .shoe_name{

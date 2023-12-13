@@ -13,7 +13,9 @@
             <i class="bx bx-shopping-bag"></i>
         </div>
         <div class="main-images">
-            <img class="blue" src="images/blue.png" alt="blue">
+            <img id="blue" class="blue active" src="images/blue.png" alt="blue">
+            <img id="pink" class="pink" src="images/pink.png" alt="pink">
+            <img id="yellow" class="yellow" src="images/yellow.png" alt="yellow">
         </div>
         <div class="shoe-details">
             <span class="shoe_name">Adidas Gaze ZX</span>
@@ -30,9 +32,9 @@
             <div class="color-option">
                 <span class="color">Colour:</span>
                 <div class="circles">
-                    <span class="circle blue active"></span>
-                    <span class="circle pink"></span>
-                    <span class="circle yellow"></span>
+                    <span class="circle blue active" id="blue"></span>
+                    <span class="circle pink" id="pink"></span>
+                    <span class="circle yellow" id="yellow"></span>
                 </div>
             </div>
             <div class="price">
@@ -50,6 +52,8 @@
             if(target.classList.contains("circle")){
                 circle.querySelector(".active").classList.remove("active");
                 target.classList.add("active");
+                document.querySelector(".main-images .active").classList.remove("active");
+                document.querySelector(`.main-images .${target.id}`).classList.add("active");
             }
         });
     </script>
