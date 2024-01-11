@@ -6,3 +6,71 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    background: #d4e9f7;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emoji{
+    position: relative;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px 2px #eead2b;
+    background: linear-gradient(#FFED65, #EEAD2F);
+}
+
+.emoji_face,.emoji_brow,
+.emoji_eye,.emoji_mouth{
+    position: absolute;
+}
+
+.emoji_face{
+    height: 120px;
+    width: 120px;
+}
+
+.emoji_brow{
+    left: calc(50% - 3px);
+    height: 6px;
+    width: 6px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -18px 0 0 0 #aa7408,
+                -33px 0 0 0 #aa7408,
+                 18px 0 0 0 #aa7408,
+                 33px 0 0 0 #aa7408;
+}
+
+.emoji_brow::before,
+.emoji_brow::after{
+    position: absolute;
+    content: '';
+    left: calc(50% - 12px);
+    top: -3px;
+    width: 24px;
+    height: 20px;
+    border: 6px solid #aa7408;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.emoji_brow::before{
+    margin-left: -25px;
+}
+
+.emoji_brow::after{
+    margin-left: 25px;
+}
+
