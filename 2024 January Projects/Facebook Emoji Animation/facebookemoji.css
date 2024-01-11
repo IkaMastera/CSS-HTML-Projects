@@ -85,3 +85,13 @@ body{
                 -25px 0 0 0 #1b2031;
 }
 
+
+.emoji_mouth{
+    top: 50%;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(#54290F, #622B0B, #6E3011);
+}
+
