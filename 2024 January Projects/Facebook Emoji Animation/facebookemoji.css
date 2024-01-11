@@ -74,3 +74,14 @@ body{
     margin-left: 25px;
 }
 
+.emoji_eye{
+    top: 35px;
+    left: calc(50% -8px);
+    height: 24px;
+    width: 16px;
+    background: red;
+    background: transparent;
+    box-shadow: 25px 0 0 0 #1b2031,
+                -25px 0 0 0 #1b2031;
+}
+
