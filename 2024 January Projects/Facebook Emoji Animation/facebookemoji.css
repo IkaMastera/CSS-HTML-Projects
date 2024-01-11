@@ -36,6 +36,19 @@ body{
 .emoji_face{
     height: 120px;
     width: 120px;
+    animation: face 3s linear infinite;
+}
+
+@keyframes face{
+    15%, 25%{
+        transform: rotate(20deg) translateX(-20px);
+    }
+    45%, 65%{
+        transform: rotate(-20deg) translateX(20px);
+    }
+    75%, 100%{
+        transform: rotate(0) translateX(0);
+    }
 }
 
 .emoji_brow{
