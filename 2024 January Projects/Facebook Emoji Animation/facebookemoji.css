@@ -47,7 +47,7 @@ body{
         transform: rotate(-20deg) translateX(20px);
     }
     75%, 100%{
-        transform: rotate(0) translateX(0);
+        transform: rotate(0) translateX(0); 
     }
 }
 
