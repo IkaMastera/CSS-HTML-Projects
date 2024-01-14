@@ -29,6 +29,11 @@ html,body{
 .icons a .layer{
     width: 55px;
     height: 55px;
+    transition: transform 0.3s;
+}
+
+.icons a:hover .layer{
+    transform: rotate(-35deg) skew(20deg);
 }
 
 .icons a .layer span{ 
@@ -45,6 +50,30 @@ html,body{
     font-size: 30px;
     line-height: 55px;
     text-align: center;
+}
+
+.icons a .layer span:nth-child(1){
+    opacity: 0.2;
+}
+
+.icons a .layer span:nth-child(2){
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+}
+
+.icons a .layer span:nth-child(3){
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+}
+
+.icons a .layer span:nth-child(4){
+    opacity: 0.8;
+    transform: translate(15px, -15px);
+}
+
+.icons a .layer span:nth-child(5){
+    opacity: 1;
+    transform: translate(20px, -20px);
 }
 
 .icons a .text{
