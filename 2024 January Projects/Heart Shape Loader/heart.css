@@ -14,6 +14,19 @@
     transform: translate(-50%, -50%);
 }
 
+.preloader{
+    animation: rotate 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes rotate {
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+
 .preloader span{
     height: 64px;
     width: 64px;
@@ -26,21 +39,39 @@
 
 .preloader span:nth-child(1){
     transform: translate(-28px, -28px);
-    animation: shape_1 2.3s cubic-bezier(0.75, 0, 0.5 ,1);
+    animation: shape_1 2.3s cubic-bezier(0.75, 0, 0.5 ,1) infinite;
 }
 
 @keyframes shape_1 {
-    
+    60%{
+        transform: scale(0.4);
+    }
 }
 
 .preloader span:nth-child(2){
     transform: translate(28px, -28px);
-    animation: shape_2 2.3s cubic-bezier(0.75, 0, 0.5 ,1);
+    animation: shape_2 2.3s cubic-bezier(0.75, 0, 0.5 ,1) infinite;
+}
+
+@keyframes shape_2 {
+    40% {
+        transform: scale(0.4);
+    }
 }
 
 .preloader span:nth-child(3){
     position: relative;
     border-radius: 0px;
     transform: scale(0.98) rotate(-45deg);
-    animation: shape_3 2.3s cubic-bezier(0.75, 0, 0.5 ,1);
+    animation: shape_3 2.3s cubic-bezier(0.75, 0, 0.5 ,1) infinite;
+}
+
+@keyframes shape_3 {
+    50%{
+        border-radius: 100%;
+        transform: scale(0.5) rotate(-45deg);
+    }
+    100%{
+        transform: scale(0.98) rotate(-45deg);
+    }
 }
