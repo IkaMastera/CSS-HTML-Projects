@@ -75,3 +75,22 @@
         transform: scale(0.98) rotate(-45deg);
     }
 }
+
+.container .shadow{
+    position: relative;
+    display: block;
+    height: 16px;
+    width: 64px;
+    background: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    top: 30px;
+    animation: shadow 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes shadow{
+    50%{
+      border-color: #f2f2f2;
+      transform: scale(0.6);
+    }
+}
